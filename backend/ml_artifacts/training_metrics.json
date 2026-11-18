@@ -1,0 +1,25 @@
+{
+  "model": "XGBRegressor",
+  "training_rows": 4800,
+  "test_rows": 1200,
+  "features": [
+    "severity",
+    "overdue_days",
+    "asset_criticality",
+    "safety_risk",
+    "train_traffic_impact",
+    "asset_health_deficit",
+    "request_priority",
+    "duration_hours",
+    "passenger_train_count",
+    "freight_train_count",
+    "is_safety_related",
+    "is_operationally_degraded"
+  ],
+  "mae": 1.858,
+  "rmse": 2.333,
+  "r2": 0.966,
+  "data_type": "SYNTHETIC",
+  "label_method": "Heuristic weighted risk policy with random noise; not expert-labelled railway data",
+  "warning": "Prototype only. Validate/retrain with reviewed railway maintenance records before operational use."
+}

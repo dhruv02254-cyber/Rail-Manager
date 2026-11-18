@@ -1,0 +1,14 @@
+[
+  "severity",
+  "overdue_days",
+  "asset_criticality",
+  "safety_risk",
+  "train_traffic_impact",
+  "asset_health_deficit",
+  "request_priority",
+  "duration_hours",
+  "passenger_train_count",
+  "freight_train_count",
+  "is_safety_related",
+  "is_operationally_degraded"
+]
