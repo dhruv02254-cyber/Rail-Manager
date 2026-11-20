@@ -120,7 +120,7 @@ export default function App() {
     <header className="topbar">
       <div className="brand-wrap">
         <div className="brand-mark"><TrainFront size={23}/></div>
-        <div><div className="brand-name">Rail<span>Manager</span></div><div className="brand-sub">SMART INDIA HACKATHON · SIH26027</div></div>
+        <div><div className="brand-name">Rail<span>Manager</span></div><div className="brand-sub">AI-POWERED RAILWAY MANAGEMENT</div></div>
       </div>
       <div className="topbar-right"><span className={`connection ${apiOnline ? 'online' : 'offline'}`}><i/>{apiOnline ? 'Backend connected' : 'Backend offline'}</span><span className="demo-tag">SIMULATED DEMO DATA</span><button className="icon-button refresh-button" onClick={loadData} title="Refresh data"><RefreshCw size={17}/></button><button className="icon-button mobile-menu" onClick={() => setMobileNavOpen(!mobileNavOpen)} aria-label="Toggle navigation">{mobileNavOpen ? <XCircle size={20}/> : <Menu size={20}/>}</button></div>
     </header>
@@ -141,7 +141,7 @@ export default function App() {
           {page === 'planner' && <Planner requests={requests} selectedId={selectedId} setSelectedId={(id) => { setSelectedId(id); setResult(null); }} selectedRequest={selectedRequest} selectedAsset={selectedAsset} result={result} loading={loading} saving={saving} modelStatus={modelStatus} onRun={() => runRecommendation()} onApprove={approveRecommendation} onViewRequests={() => changePage('requests')}/>}
           {page === 'requests' && <Requests requests={requests} assets={assets} onPlan={(id) => { setSelectedId(id); setResult(null); changePage('planner'); }}/>} 
         </>}
-        <footer className="page-footer"><span>RailManager · SIH26027</span><span>Prototype using simulated railway data · Not for live railway operations</span></footer>
+        <footer className="page-footer"><span>RailManager</span><span>Prototype using simulated railway data · Not for live railway operations</span></footer>
       </main>
     </div>
   </div>;
